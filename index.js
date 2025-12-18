@@ -15,10 +15,9 @@ function drawCard(index, description){
 
 function drawCards(){
     let output = '';
-    
-    // Add Your Code Here
-    // add card for each task
-    
+      tasks.forEach((task, index) => {
+        output += drawCard(index, task);
+    });
     return output;
 }
 
